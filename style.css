@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+h1{
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    padding: 5px 1opx;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000;
+    transition : 0.5s;
+}
+
+.container{
+    width: min(480px, 90%);
+    margin-inline: auto;
+}
+.shopping-form{
+    padding: 1 rem;
+    background: yellowgreen;
+    display: flex;
+    align-items:  stretch;
+    gap: 5px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.shopping-form input{
+    flex: 1;
+    padding: 5px 10px;
+    border-radius: inherit;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.shopping-form button{
+    padding: 5px 15px;
+    border-radius: inherit;
+    background: #000;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.shopping-filter button{
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.shopping-filter button:hover, .shopping-filter button.active{
+    background: #000;
+    color: #fff;
+}
+.shopping-list{
+    list-style-type: none;
+    padding: 0;
+}
+.shopping-list li{
+    background: #fff;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.shopping-list li.dragging{
+    visibility: hidden;
+}
+.shopping-list
